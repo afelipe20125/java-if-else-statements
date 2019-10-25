@@ -23,20 +23,22 @@ public class IfElseStatements {
         
         
         //Invoke the methods here 
-        question1();
-        question2();
-        question3();
-        question4();
-        question5();
+//        question1();
+//        question2();
+//        question3();
+//        question4();
+//        question5();
         question6();
         question7();
+        question8();
+        question9();
         
         
     }
     
     
     public static void question1(){
-        System.out.println("print a number");
+        System.out.println("what is your grade");
         int x = kb.nextInt();
         if(x >= 70)
         {
@@ -50,7 +52,7 @@ public class IfElseStatements {
     }
     
     public static void question2(){
-        System.out.println("print a number");
+        System.out.println("put a number");
         int x = kb.nextInt();
         if(x <= 50)
         {
@@ -148,11 +150,28 @@ public class IfElseStatements {
     
     
     public static void question8(){
-        
+        System.out.println("Pick a drink size");
+        String x = kb.nextLine();
+        if(x.equals("short"))
+        {
+            System.out.println("your drink is 8oz");
+        }
+        else if(x.equals("tall"))
+        {
+            System.out.println("your drink is 12oz");
+        }
+        else if(x.equals("grande"))
+        {
+            System.out.println("your drink is 16oz");
+        }
+        else if(x.equals("venti"))
+        {
+            System.out.println("your drink is 20 oz");
+        }
     }
     
     public static void question9(){
-        
+        System.out.println();
     }
     
     public static void question10(){
