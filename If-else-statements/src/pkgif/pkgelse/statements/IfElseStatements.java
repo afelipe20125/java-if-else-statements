@@ -23,11 +23,11 @@ public class IfElseStatements {
         
         
         //Invoke the methods here 
-//        question1();
-//        question2();
-//        question3();
-//        question4();
-//        question5();
+        question1();
+        question2();
+        question3();
+        question4();
+        question5();
         question6();
         question7();
         question8();
@@ -171,7 +171,25 @@ public class IfElseStatements {
     }
     
     public static void question9(){
-        System.out.println();
+        double grossPay = 0;
+        System.out.println("How much do you make");
+        int wage = kb.nextInt();
+        System.out.println("how many hours did you work");
+        int hours = kb.nextInt();
+        if(hours > 40){
+            grossPay = wage * 40;
+            grossPay += (hours - 40) * (wage * 1.5);
+            
+            System.out.println("Regular wage: $" + (wage * 40));
+            System.out.println("Overtime wage: $" + ((hours - 40) * (wage * 1.5)) );
+        }
+        else
+        {
+            grossPay = wage * hours;
+            System.out.println("Regular wage: $" + (wage * hours));
+        }
+        System.out.println("Your gross pay is: $" + grossPay);
+        
     }
     
     public static void question10(){
